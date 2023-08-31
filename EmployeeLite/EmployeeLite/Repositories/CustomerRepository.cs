@@ -60,9 +60,9 @@ namespace EmployeeLite.Repositories
             };
 
             connection.Execute(
-        @"insert or replace into customers (FirstName, LastName, Company, Country, City, State, Address, PostalCode, Phone, Fax, Email, SupportRepId)
-        values (@_firstName, @_lastName, @_company, @_country, @_city, @_state, @_address, @_postalCode, @_phone, @_fax, @_email, @EmployeeId)",
-        parameters);
+                @"insert or replace into customers (FirstName, LastName, Company, Country, City, State, Address, PostalCode, Phone, Fax, Email, SupportRepId)
+                values (@_firstName, @_lastName, @_company, @_country, @_city, @_state, @_address, @_postalCode, @_phone, @_fax, @_email, @EmployeeId)",
+                parameters);
         }
 
         public void UpdateCustomer(int customerId, string firstName, string lastName, string company,
@@ -86,9 +86,9 @@ namespace EmployeeLite.Repositories
             };
 
             connection.Execute("update customers set FirstName = @_firstName, LastName = @_lastName, Company = @_company, " +
-"Country = @_country, City = @_city, State = @_state, Address = @_address, " +
-"PostalCode = @_postalCode, Phone = @_phone, Fax = @_fax, Email = @_email " +
-"where CustomerId = @_customerId", parameters);
+                "Country = @_country, City = @_city, State = @_state, Address = @_address, " +
+                "PostalCode = @_postalCode, Phone = @_phone, Fax = @_fax, Email = @_email " +
+                "where CustomerId = @_customerId", parameters);
         }
 
         public void DeleteCustomer(int customerId)

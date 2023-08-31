@@ -79,9 +79,9 @@ namespace EmployeeLite.Repositories
             };
 
             connection.Execute(
-    @"insert or replace into employees (Title, FirstName, LastName, BirthDate, HireDate, Country, City, State, Address, PostalCode, Phone, Fax, Email)
-    values (@_title, @_firstName, @_lastName, @_birthDate, @_hireDate, @_country, @_city, @_state, @_address, @_postalCode, @_phone, @_fax, @_email)",
-    parameters);
+                @"insert or replace into employees (Title, FirstName, LastName, BirthDate, HireDate, Country, City, State, Address, PostalCode, Phone, Fax, Email)
+                values (@_title, @_firstName, @_lastName, @_birthDate, @_hireDate, @_country, @_city, @_state, @_address, @_postalCode, @_phone, @_fax, @_email)",
+                parameters);
         }
 
         public void DeleteEmployee(int employeeId)

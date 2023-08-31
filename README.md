@@ -7,7 +7,7 @@ To use SQLite, an administrator does not need to create a new database instance 
 [Source](https://sqlitebrowser.org/dl/) for SQLite download.    <br/>
 In order to use SQLite, the `DB Browser for SQLite` PortableApp must be installed.
 
-A ready-made SQLite Sample Database named [Chinook](https://www.sqlitetutorial.net/sqlite-sample-database/) >> `Download SQLite Sample Database` is used.
+A ready-made SQLite Sample Database named [Chinook.db](https://www.sqlitetutorial.net/sqlite-sample-database/) >> `Download SQLite Sample Database` is used.
 
 ### NuGet Gallery
 Some packages can be installed from the "[NuGet Gallery](https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core)" with the help of the `Tools > NuGet Package Manager > Package Manager Console`.
