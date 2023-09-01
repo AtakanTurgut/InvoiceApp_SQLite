@@ -35,5 +35,20 @@ namespace EmployeeLite.Forms
         {
             this.Close();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            txtCompany.Clear();
+            txtCountry.Clear();
+            txtCity.Clear();
+            txtState.Clear();
+            txtAddress.Clear();
+            txtPostalCode.Clear();
+            txtPhone.Clear();
+            txtFax.Clear();
+            txtEmail.Clear();
+        }
     }
 }

@@ -54,12 +54,16 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.txtPostalCode = new System.Windows.Forms.TextBox();
             this.lblPostalCode = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.txtAddress);
             this.groupBox3.Controls.Add(this.lblAddress);
             this.groupBox3.Controls.Add(this.txtState);
@@ -83,6 +87,9 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAddress.Location = new System.Drawing.Point(80, 200);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -91,6 +98,9 @@
             // 
             // lblAddress
             // 
+            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAddress.AutoSize = true;
             this.lblAddress.Location = new System.Drawing.Point(4, 203);
             this.lblAddress.Name = "lblAddress";
@@ -100,6 +110,9 @@
             // 
             // txtState
             // 
+            this.txtState.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtState.Location = new System.Drawing.Point(80, 172);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(294, 22);
@@ -107,6 +120,9 @@
             // 
             // lblState
             // 
+            this.lblState.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblState.AutoSize = true;
             this.lblState.Location = new System.Drawing.Point(4, 175);
             this.lblState.Name = "lblState";
@@ -116,6 +132,9 @@
             // 
             // txtCity
             // 
+            this.txtCity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCity.Location = new System.Drawing.Point(80, 144);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(294, 22);
@@ -123,6 +142,9 @@
             // 
             // lblCity
             // 
+            this.lblCity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCity.AutoSize = true;
             this.lblCity.Location = new System.Drawing.Point(4, 147);
             this.lblCity.Name = "lblCity";
@@ -132,6 +154,9 @@
             // 
             // txtCompany
             // 
+            this.txtCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCompany.Location = new System.Drawing.Point(80, 88);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(294, 22);
@@ -139,6 +164,9 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLastName.Location = new System.Drawing.Point(82, 60);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(294, 22);
@@ -146,6 +174,9 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFirstName.Location = new System.Drawing.Point(82, 30);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(294, 22);
@@ -153,6 +184,9 @@
             // 
             // txtCountry
             // 
+            this.txtCountry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCountry.Location = new System.Drawing.Point(80, 116);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(294, 22);
@@ -160,6 +194,9 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(4, 91);
             this.label5.Name = "label5";
@@ -169,6 +206,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 63);
             this.label2.Name = "label2";
@@ -178,6 +218,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 33);
             this.label1.Name = "label1";
@@ -187,6 +230,9 @@
             // 
             // lblCountry
             // 
+            this.lblCountry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCountry.AutoSize = true;
             this.lblCountry.Location = new System.Drawing.Point(4, 119);
             this.lblCountry.Name = "lblCountry";
@@ -196,6 +242,9 @@
             // 
             // btnPrevious
             // 
+            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPrevious.Location = new System.Drawing.Point(5, 439);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(44, 36);
@@ -206,10 +255,13 @@
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.LightGreen;
             this.btnSave.Location = new System.Drawing.Point(52, 439);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(336, 36);
+            this.btnSave.Size = new System.Drawing.Size(289, 36);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save Customer";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -217,6 +269,9 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.txtEmail);
             this.groupBox4.Controls.Add(this.lblEmail);
             this.groupBox4.Controls.Add(this.txtFax);
@@ -234,6 +289,9 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(79, 105);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(294, 22);
@@ -241,6 +299,9 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(3, 108);
             this.lblEmail.Name = "lblEmail";
@@ -250,6 +311,9 @@
             // 
             // txtFax
             // 
+            this.txtFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFax.Location = new System.Drawing.Point(79, 77);
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(294, 22);
@@ -257,6 +321,9 @@
             // 
             // lblFax
             // 
+            this.lblFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFax.AutoSize = true;
             this.lblFax.Location = new System.Drawing.Point(3, 80);
             this.lblFax.Name = "lblFax";
@@ -266,6 +333,9 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone.Location = new System.Drawing.Point(79, 49);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(294, 22);
@@ -273,6 +343,9 @@
             // 
             // lblPhone
             // 
+            this.lblPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhone.AutoSize = true;
             this.lblPhone.Location = new System.Drawing.Point(3, 52);
             this.lblPhone.Name = "lblPhone";
@@ -282,6 +355,9 @@
             // 
             // txtPostalCode
             // 
+            this.txtPostalCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPostalCode.Location = new System.Drawing.Point(79, 21);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(294, 22);
@@ -289,6 +365,9 @@
             // 
             // lblPostalCode
             // 
+            this.lblPostalCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPostalCode.AutoSize = true;
             this.lblPostalCode.Font = new System.Drawing.Font("Microsoft Tai Le", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPostalCode.Location = new System.Drawing.Point(3, 24);
@@ -297,11 +376,25 @@
             this.lblPostalCode.TabIndex = 0;
             this.lblPostalCode.Text = "Postal Code";
             // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Location = new System.Drawing.Point(347, 439);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(45, 36);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "X";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // InsertCustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 483);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox4);
@@ -345,5 +438,6 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.TextBox txtPostalCode;
         private System.Windows.Forms.Label lblPostalCode;
+        private System.Windows.Forms.Button btnClear;
     }
 }

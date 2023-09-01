@@ -32,7 +32,7 @@ namespace EmployeeLite.Repositories
             return employee;
         }
 
-        public void UpdateEmployee(int employeeId, string title, string firstName, string lastName,
+        public void UpdateEmployee(int employeeId, string title, string firstName, string lastName, DateTime birthDate, DateTime hireDate,
             string country, string city, string state, string address,
             string postalCode, string phone, string fax, string email)
         {
@@ -42,6 +42,8 @@ namespace EmployeeLite.Repositories
                 _title = title,
                 _firstName = firstName,
                 _lastName = lastName,
+                _birthDate = birthDate,
+                _hireDate = hireDate,
                 _country = country,
                 _city = city,
                 _state = state,
@@ -52,7 +54,7 @@ namespace EmployeeLite.Repositories
                 _email = email
             };
 
-            connection.Execute("update employees set Title = @_title, FirstName = @_firstName, LastName = @_lastName," +
+            connection.Execute("update employees set Title = @_title, FirstName = @_firstName, LastName = @_lastName, BirthDate = @_birthDate, HireDate = @_hireDate," +
                 "Country = @_country, City = @_city, State = @_state, Address = @_address," +
                 "PostalCode = @_postalCode, Phone = @_phone, Fax = @_fax, Email = @_email where EmployeeId = @_employeeId", parameters);
         }

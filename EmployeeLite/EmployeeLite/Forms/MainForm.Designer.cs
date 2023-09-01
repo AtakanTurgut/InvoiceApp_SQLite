@@ -39,6 +39,9 @@
             // 
             // gbEmployee
             // 
+            this.gbEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbEmployee.Controls.Add(this.grdEmployee);
             this.gbEmployee.Location = new System.Drawing.Point(12, 24);
             this.gbEmployee.Name = "gbEmployee";
@@ -51,8 +54,10 @@
             // 
             this.grdEmployee.AllowUserToAddRows = false;
             this.grdEmployee.AllowUserToDeleteRows = false;
+            this.grdEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdEmployee.Location = new System.Drawing.Point(3, 18);
             this.grdEmployee.Name = "grdEmployee";
             this.grdEmployee.ReadOnly = true;
@@ -65,6 +70,9 @@
             // 
             // btnAddEmployee
             // 
+            this.btnAddEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddEmployee.BackColor = System.Drawing.Color.LightGreen;
             this.btnAddEmployee.Location = new System.Drawing.Point(172, 408);
             this.btnAddEmployee.Name = "btnAddEmployee";
@@ -76,6 +84,9 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.BackColor = System.Drawing.Color.LightGray;
             this.btnRefresh.Location = new System.Drawing.Point(648, 408);
             this.btnRefresh.Name = "btnRefresh";
@@ -87,6 +98,9 @@
             // 
             // btnDeleteEmployee
             // 
+            this.btnDeleteEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteEmployee.BackColor = System.Drawing.Color.LightCoral;
             this.btnDeleteEmployee.Location = new System.Drawing.Point(12, 408);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";

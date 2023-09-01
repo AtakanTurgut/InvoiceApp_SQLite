@@ -29,7 +29,8 @@ C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLi
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.exe
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.pdb
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.EmployeeDetail.resources
-C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.InvoiceDetail.resources
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.InsertEmployeeForm.resources
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.InsertCustomerForm.resources
 C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.CustomerDetail.resources
+C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.InsertInvoiceForm.resources
+C:\Users\Excalibur\Desktop\sqlite\EmployeeLite\EmployeeLite\obj\Debug\EmployeeLite.Forms.InvoiceDetail.resources

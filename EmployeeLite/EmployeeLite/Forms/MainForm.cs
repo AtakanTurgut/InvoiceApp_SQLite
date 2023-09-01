@@ -56,7 +56,7 @@ namespace EmployeeLite.Forms
         {
             var chosen = (Employee)grdEmployee.SelectedRows[0].DataBoundItem;
 
-            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected Employee?", "Employee Will Delete!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected Employee?", "Employee Will Delete!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {

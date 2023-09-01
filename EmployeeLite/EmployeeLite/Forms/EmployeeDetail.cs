@@ -73,9 +73,20 @@ namespace EmployeeLite.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            using (EmployeeRepository employeeRepository = new EmployeeRepository())
+            DialogResult result = MessageBox.Show("Are you sure you want to update the selected Employee?", "Employee Will Updated!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
-                employeeRepository.UpdateEmployee(employeeId, txtTitle.Text, txtFirstName.Text, txtLastName.Text, txtCountry.Text, txtCity.Text, txtState.Text, txtAddress.Text, txtPostalCode.Text, txtPhone.Text, txtFax.Text, txtEmail.Text);
+                using (EmployeeRepository employeeRepository = new EmployeeRepository())
+                {
+                    employeeRepository.UpdateEmployee(employeeId, txtTitle.Text, txtFirstName.Text, txtLastName.Text, dateTimeBirthDate.Value, dateTimeHireDate.Value, txtCountry.Text, txtCity.Text, txtState.Text, txtAddress.Text, txtPostalCode.Text, txtPhone.Text, txtFax.Text, txtEmail.Text);
+                }
+
+                MessageBox.Show("Employee Updated Successful!");
+            }
+            else
+            {
+                MessageBox.Show("Update Canceled.");
             }
         }
 
@@ -99,7 +110,7 @@ namespace EmployeeLite.Forms
         {
             var chosen = (Customer)grdCustomer.SelectedRows[0].DataBoundItem;
 
-            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected Customer?", "Customer Will Delete!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected Customer?", "Customer Will Delete!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {

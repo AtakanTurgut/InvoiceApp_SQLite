@@ -111,6 +111,12 @@
     <Compile Include="Forms\InsertEmployeeForm.Designer.cs">
       <DependentUpon>InsertEmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InsertInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertInvoiceForm.Designer.cs">
+      <DependentUpon>InsertInvoiceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InvoiceDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
@@ -143,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertEmployeeForm.resx">
       <DependentUpon>InsertEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertInvoiceForm.resx">
+      <DependentUpon>InsertInvoiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InvoiceDetail.resx">
       <DependentUpon>InvoiceDetail.cs</DependentUpon>

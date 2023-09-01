@@ -9,17 +9,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace EmployeeLite.Forms
 {
     public partial class CustomerDetail : Form
     {
         int customerId = 0;
+        int invoiceId = 0;
 
         public CustomerDetail(int customerId)
         {
             InitializeComponent();
             this.customerId = customerId;
+        }
+
+        public CustomerDetail(int customerId, int invoiceId)
+        {
+            InitializeComponent();
+            this.customerId = customerId;
+            this.invoiceId = invoiceId;
         }
 
         private void CustomerDetail_Load(object sender, EventArgs e)
@@ -65,9 +74,20 @@ namespace EmployeeLite.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            using (CustomerRepository customerRepository = new CustomerRepository())
+            DialogResult result = MessageBox.Show("Are you sure you want to update the selected Customer?", "Customer Will Updated!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
-                customerRepository.UpdateCustomer(customerId, txtFirstName.Text, txtLastName.Text, txtCompany.Text, txtCountry.Text, txtCity.Text, txtState.Text, txtAddress.Text, txtPostalCode.Text, txtPhone.Text, txtFax.Text, txtEmail.Text);
+                using (CustomerRepository customerRepository = new CustomerRepository())
+                {
+                    customerRepository.UpdateCustomer(customerId, txtFirstName.Text, txtLastName.Text, txtCompany.Text, txtCountry.Text, txtCity.Text, txtState.Text, txtAddress.Text, txtPostalCode.Text, txtPhone.Text, txtFax.Text, txtEmail.Text);
+                }
+
+                MessageBox.Show("Customer Updated Successful!");
+            }
+            else
+            {
+                MessageBox.Show("Update Canceled.");
             }
         }
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -77,17 +97,44 @@ namespace EmployeeLite.Forms
 
         private void btnAddInvoice_Click(object sender, EventArgs e)
         {
-            
+            InsertInvoiceForm insertInvoiceForm = new InsertInvoiceForm(customerId, invoiceId);
+            insertInvoiceForm.ShowDialog();
         }
 
         private void btnDeleteInvoice_Click(object sender, EventArgs e)
         {
+            var chosen = (Invoice)grdInvoice.SelectedRows[0].DataBoundItem;
 
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the selected Invoice?", "Invoice Will Delete!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                using (InvoiceRepository invoiceRepository = new InvoiceRepository())
+                {
+                    invoiceRepository.DeleteInvoice(chosen.InvoiceId);
+                }
+
+                MessageBox.Show("Delete Successful!");
+
+                GetInvoiceByCustomerId();
+            }
+            else
+            {
+                MessageBox.Show("Deletion Canceled.");
+            }
         }
 
         private void btnRefreshInvoice_Click(object sender, EventArgs e)
         {
             GetInvoiceByCustomerId();
+        }
+
+        private void grdInvoice_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int invoiceId = (int)grdInvoice.Rows[e.RowIndex].Cells[0].Value;
+
+            InvoiceDetail invoiceDetailForm = new InvoiceDetail(invoiceId);
+            invoiceDetailForm.ShowDialog();
         }
     }
 }
